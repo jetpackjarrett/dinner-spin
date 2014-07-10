@@ -27,7 +27,9 @@ gulp.task('css', function(){
 gulp.task('vendorJS', function(){
     //concatenate vendor JS files
     gulp.src(['!./bower_components/**/*.min.js',
-        './bower_components/**/*.js'])
+        './bower_components/**/*.js',
+        '!./bower_components/**/Gruntfile.js'
+        ])
         .pipe(plugins.concat('lib.js'))
         .pipe(gulp.dest('./build'));
 });

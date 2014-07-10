@@ -1,6 +1,14 @@
-<h3>List of Awesome Things</h3>
-<ul>
-    <li ng-repeat="thing in awesomeThings">
-    {{thing}}
-    </li>
-</ul>
+<article>
+  <a
+    class="go"
+    href= "#"
+    name="select-restaurant"
+    ng-click="chooseRestaurant()"
+    ng-hide="currentRestaurant !== null || ready == false"
+    prevent-default
+  >
+  Go</a>
+
+  <h1 ng-class="transition" ng-hide="currentRestaurant == null">{{currentRestaurant}}</h1>
+
+</article>
