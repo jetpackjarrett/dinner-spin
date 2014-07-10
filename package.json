@@ -13,5 +13,10 @@
     "karma": "^0.12.1",
     "karma-jasmine": "^0.1.5",
     "karma-chrome-launcher": "^0.1.2"
+  },
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "express": "^4.5.1",
+    "gzippo": "^0.2.0"
   }
 }
