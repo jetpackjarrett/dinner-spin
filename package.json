@@ -17,6 +17,7 @@
   "dependencies": {
     "coffee-script": "^1.7.1",
     "express": "^4.5.1",
+    "express-logger": "0.0.3",
     "gzippo": "^0.2.0"
   }
 }
