@@ -68,5 +68,5 @@ gulp.task('connect', plugins.connect.server({
     port: 9000,
     livereload: true
 }));
-
+gulp.task('build', ['scripts', 'templates', 'css', 'copy-index', 'vendorJS', 'vendorCSS']);
 gulp.task('default',['connect','scripts','templates','css','copy-index','vendorJS','vendorCSS','watch']);
