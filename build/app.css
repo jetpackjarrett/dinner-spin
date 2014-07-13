@@ -1,0 +1,24 @@
+body {
+  background-color: #6c909f;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  height: 100%;
+}
+
+article {
+  position: absolute;
+  top: 50%;
+  height: 5em;
+  margin-top: -5em;
+  width: 100%;
+}
+
+.go, h1 {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 500%;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
