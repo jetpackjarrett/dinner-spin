@@ -3,12 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>ng-rr</title>
+    <title>Dinner Spin</title>
     <link href="lib.css" rel="stylesheet">
     <link href="app.css" rel="stylesheet">
   </head>
-  <body ng-app="ng-rr">
-    <div class="container" ng-view=""></div>
+  <body ng-app="dinner-spin">
+
+    <article ng-controller="SpinCtrl">
+      <a
+        class="go"
+        href= "#"
+        name="select-restaurant"
+        ng-click="chooseRestaurant()"
+        ng-hide="choice !== null || ready == false"
+        prevent-default
+      >
+      Go</a>
+
+      <h1 ng-class="transition" ng-hide="choice == null">{{choice}}</h1>
+
+    </article>
+
     <script src="lib.js"></script>
     <script src="templates.js"></script>
     <script src="app.js"></script>
